@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Xpense</string>
+    <string name="developed_by_s3hnv">Developed By S3HNV</string>
+    <string name="todo">TODO</string>
+    <string name="dashboard">DashBoard</string>
+    <string name="money_management">Money Management</string>
+    <string name="reminder">Reminder</string>
+    <string name="transaction">Transaction</string>
+    <string name="pdf">PDF</string>
+    <string name="enter_otp_here">Enter OTP here</string>
+    <string name="verify_and_signin">Verify and Signin</string>
+    <string name="name">Name</string>
+    <string name="phone">phone</string>
+    <string name="item">Item</string>
+    <string name="quantity">Quantity</string>
+    <string name="rate">Rate</string>
+    <string name="aty">aty</string>
+    <string name="button">Button</string>
+</resources>

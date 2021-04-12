@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/event_back"
+    tools:context=".ReminderActivity">
+
+    <TextView
+        android:id="@+id/eventReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event Reminder"
+        android:textColor="@color/purple_500"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <EditText
+        android:id="@+id/eventUserName"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventReminder"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <EditText
+        android:id="@+id/eventDescription"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Description"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/eventUserEmail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/eventUserEmail"
+        app:layout_constraintTop_toBottomOf="@+id/eventUserEmail" />
+
+    <!--    android:background="@color/colorPrimary"-->
+
+    <Button
+        android:id="@+id/addEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/btn"
+        android:paddingLeft="15dp"
+        android:paddingTop="0dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="0dp"
+        android:text="Add Event"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/eventDate"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/eventDate"
+        app:layout_constraintTop_toBottomOf="@+id/eventDate" />
+
+    <EditText
+        android:id="@+id/eventAmount"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Amount"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/eventDescription"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/eventDescription"
+        app:layout_constraintTop_toBottomOf="@+id/eventDescription" />
+
+    <EditText
+        android:id="@+id/eventDate"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="DD/MM/YYYY"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="@+id/eventAmount"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/eventAmount"
+        app:layout_constraintTop_toBottomOf="@+id/eventAmount" />
+
+    <EditText
+        android:id="@+id/eventUserEmail"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/eventUserPhone"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/eventUserPhone"
+        app:layout_constraintTop_toBottomOf="@+id/eventUserPhone" />
+
+    <EditText
+        android:id="@+id/eventUserPhone"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Mobile Number"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@+id/eventUserName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/eventUserName"
+        app:layout_constraintTop_toBottomOf="@+id/eventUserName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

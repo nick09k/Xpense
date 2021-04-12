@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/dash_back"
+    android:gravity="center|top"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center|center_horizontal"
+        android:text="FEEDBACK"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="305dp"
+        android:layout_height="157dp"
+        app:srcCompat="@drawable/feedback2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:text="TextView"
+        android:textColor="#231717"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:clickable="true"
+        android:numStars="5" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="293dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="12dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Enter your feedback..."
+        android:inputType="textMultiLine"
+        android:textColor="#FF000000"
+        android:textColorHint="#151313" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine2"
+        android:layout_width="354dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Enter your Mail address..."
+        android:inputType="textMultiLine"
+        android:paddingTop="12dp"
+        android:textColor="#FF000000"
+        android:textColorHint="#0E0A0A" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="#d43f8d"
+        android:text="Send Feedback"
+        app:backgroundTint="#d43f8d" />
+
+</LinearLayout>

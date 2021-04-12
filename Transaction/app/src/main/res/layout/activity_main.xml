@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dash_back"
+    tools:context=".MainActivity"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/DashBoard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dashboard"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_below="@id/DashBoard"
+                android:text="@string/money_management"
+                android:textSize="14sp"
+                android:textColor="#ffffff"
+                />
+
+            <TextView
+                android:id="@+id/tusermain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_toStartOf="@+id/logimg"
+                android:layout_toLeftOf="@+id/logimg"
+                android:textSize="14sp"
+                android:text="user name"
+                android:textColor="#ffffff"/>
+            <ImageView
+                android:id="@+id/logimg"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/index"
+                android:contentDescription="@string/todo"
+                android:layout_alignParentRight="true" />
+
+
+
+        </RelativeLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rowCount="3"
+            android:columnCount="2"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:id="@+id/pdf"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+
+                        android:id="@+id/pdfact"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/pdf" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Invoice"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <!--        <androidx.cardview.widget.CardView-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_columnWeight="1"-->
+            <!--            android:layout_rowWeight="1"-->
+            <!--            app:cardCornerRadius="12dp"-->
+            <!--            app:cardElevation="6dp"-->
+            <!--            android:layout_margin="12dp">-->
+
+            <!--            <LinearLayout-->
+            <!--                android:id="@+id/pdf"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:gravity="center"-->
+            <!--                android:orientation="vertical"-->
+            <!--                android:padding="16dp">-->
+
+            <!--                <ImageView-->
+
+            <!--                    android:id="@+id/pdfact"-->
+            <!--                    android:layout_width="80dp"-->
+            <!--                    android:layout_height="80dp"-->
+            <!--                    android:contentDescription="TODO"-->
+            <!--                    android:src="@drawable/images" />-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginTop="12dp"-->
+            <!--                    android:text="@string/pdf"-->
+            <!--                    android:textColor="#6f6f6f"-->
+            <!--                    android:textSize="18sp" />-->
+            <!--            </LinearLayout>-->
+
+            <!--        </androidx.cardview.widget.CardView>-->
+            <androidx.cardview.widget.CardView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                android:layout_margin="12dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/transaction"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/transaction"
+                        android:contentDescription="TODO" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:text="@string/transaction"
+                        />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                android:layout_margin="12dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/reminder"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/reminder"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18dp"
+                        android:text="Reminder"
+                        />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                android:layout_margin="12dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/feedback"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/feedback"
+                        android:contentDescription="@string/todo" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:text="Feedback"
+                        />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                android:layout_margin="12dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/call_main"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/call"
+                        android:contentDescription="@string/todo" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:text="Contact Us"
+                        />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                android:layout_margin="12dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/logout"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/logout"
+                        android:contentDescription="@string/todo" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:text="Logout"
+                        />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--<androidx.cardview.widget.CardView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                android:layout_margin="12dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/images"
+                        android:contentDescription="@string/todo" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:text="@string/reminder"
+                        />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>-->
+
+
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>
+
+
+    <!--        <Button-->
+    <!--            android:id="@+id/button"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginBottom="208dp"-->
+    <!--            android:text="@string/button"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.498"-->
+    <!--            app:layout_constraintStart_toStartOf="parent" />-->
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/name"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:ems="10"-->
+    <!--            android:hint="@string/name"-->
+    <!--            android:inputType="textPersonName"-->
+    <!--            app:layout_constraintBottom_toTopOf="@+id/pno"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:layout_constraintVertical_bias="0.722"-->
+    <!--            android:importantForAutofill="no" />-->
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/pno"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginBottom="48dp"-->
+    <!--            android:ems="10"-->
+    <!--            android:hint="@string/phone"-->
+    <!--            android:importantForAutofill="no"-->
+    <!--            android:inputType="textPersonName"-->
+    <!--            app:layout_constraintBottom_toTopOf="@+id/item"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.497"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:layout_constraintVertical_bias="1.0" />-->
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/item"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginBottom="4dp"-->
+    <!--            android:ems="10"-->
+    <!--            android:hint="@string/item"-->
+    <!--            android:importantForAutofill="no"-->
+    <!--            android:inputType="textPersonName"-->
+    <!--            app:layout_constraintBottom_toTopOf="@+id/qty"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.502"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:layout_constraintVertical_bias="0.902" />-->
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/qty"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginBottom="84dp"-->
+    <!--            android:ems="10"-->
+    <!--            android:hint="@string/qty"-->
+    <!--            android:importantForAutofill="no"-->
+    <!--            android:inputType="textPersonName"-->
+    <!--            app:layout_constraintBottom_toTopOf="@+id/button"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.502"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:layout_constraintVertical_bias="1.0" />-->
+

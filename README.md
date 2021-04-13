@@ -6,3 +6,5 @@ This app has following feature:
 3.Payment Notifier.
 4.Customer support .
 5.Transaction record like expense , paid , pending.
+
+Download APK FILE: https://drive.google.com/file/d/1Hbfxsm5mpUjtjgTNqAiBkA_ssp9h8Dnq/view?usp=sharing
